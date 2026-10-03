@@ -78,6 +78,7 @@ const MODEL_MAPPING = {
   'gpt-3.5o': 'nvidia/nemotron-3.5-lightning-30b-a3b', // was google/gemma-2b
   'gpt-4-flash': 'deepseek-ai/deepseek-v4-flash-0731',
   'gpt-4o': 'deepseek-ai/deepseek-v4-pro-0813',
+  'glm-5.3': 'z-ai/glm-5.3',
   'mistral': 'mistralai/mistral-large-2-instruct', // was mistralai/mistral-large-3-675b-instruct-2512
   'mistral-turbo': 'nv-mistralai/mistral-nemo-12b-instruct', // was mistralai/mistral-medium-3.5-128b
   'mistral-pro': 'mistralai/mistral-7b-instruct-v0.3', // was mistralai/mistral-small-4-119b-2603
