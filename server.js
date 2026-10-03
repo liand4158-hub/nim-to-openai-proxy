@@ -454,7 +454,7 @@ app.post('/v1/chat/completions', async (req, res) => {
     const baseRequest = {
       ...forwardedFields,
       temperature: temperature ?? 0.7,
-      max_tokens: Math.min(max_tokens ?? 2048, MAX_TOKENS_LIMIT),
+      max_tokens: Math.min(max_tokens > 0 ? max_tokens : DEFAULT_MAX_OUTPUT_TOKENS, MAX_TOKENS_LIMIT),
       stream: stream || false
     };
 
