@@ -26,6 +26,7 @@ const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
 const DEBUG_MODE = process.env.DEBUG_MODE === 'true';
 
 const MAX_TOKENS_LIMIT = 65536;
+const DEFAULT_MAX_OUTPUT_TOKENS = Number(process.env.MAX_OUTPUT_TOKENS) || 6000;
 
 // Shared keep-alive agent for connection reuse on long-lived deployments.
 const keepAliveAgent = new https.Agent({
