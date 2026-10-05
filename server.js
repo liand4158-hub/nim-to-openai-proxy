@@ -284,7 +284,9 @@ async function callWithFallback(baseRequest, models, enableThinking, clientReaso
     const reasoningPayload = getReasoningPayload(model, enableThinking, clientReasoningEffort, hasTools);
     const fullRequest = { ...baseRequest, model, ...reasoningPayload };
 
-    if (DEBUG_MODE) {
+console.log('[DEBUG] JAI request:', JSON.stringify(fullRequest));
+
+if (DEBUG_MODE) {
       console.log(`[DEBUG] Attempting ${model} with reasoning payload:`, JSON.stringify(reasoningPayload), `(timeout: ${timeoutMs}ms)`);
     }
 
