@@ -683,7 +683,9 @@ app.post('/v1/chat/completions', async (req, res) => {
         cleanup();
       });
     } else {
-      const openaiResponse = {
+      console.log('[DEBUG] NIM response data:', JSON.stringify(response.data));
+
+const openaiResponse = {
         id: `chatcmpl-${Date.now()}`,
         object: 'chat.completion',
         model: usedModel, // actual model that answered, may differ from the requested alias
