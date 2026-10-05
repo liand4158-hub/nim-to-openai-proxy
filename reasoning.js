@@ -270,7 +270,7 @@ function getReasoningPayload(model, enableThinking, clientReasoningEffort, hasTo
     }
 
     case 'z-ai/glm-5.3': {
-      return { reasoning_effort: effort || 'low' };
+      return { reasoning_effort: effort || 'high' };
     }
 
     default:
